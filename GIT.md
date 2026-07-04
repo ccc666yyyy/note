@@ -1,5 +1,7 @@
 # GIT
 
+
+
 ### 桌面创建文件夹（主要用于复制github上的项目）
 
 桌面右键open git bash here,在终端中输入命令：
@@ -40,15 +42,24 @@ git log --graph        # 用图形化方式显示分支历史[reference:20]
 
 `git chetout HADE 文件名（eg.main.py)`
 
+HADE表示当前分支
+
 ### 分支
 
 创建分支：
 
 `git branch 分支名`
 
+切换分支：
+`git swith 分支名`
+
+`git chekout 分支名`
+
 创建并切换到指定分支：
 
-`git chekout -b 分支名`
+`git awith -c 新分支名`
+
+`git chekout -b 新分支名`
 
 删除分支（不能删除当前所在的分支）：
 
@@ -63,3 +74,9 @@ git log --graph        # 用图形化方式显示分支历史[reference:20]
 要先切换到目标分支
 
 `git merge 分支名`(一个分支上的提交可以合并到另一个分支上)
+
+### 本地项目推送到github仓库
+
+git push
+
+如果直接在github上修改了需要先`git pull`把github上的修改版拉到本地在进行推送
